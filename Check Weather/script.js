@@ -49,40 +49,7 @@ const getWeather=async(search_input)=>{
 	
 	}
 	catch(error){
-		alert("city not found");
+		alert("City not found.Try another city!!");
 	}
 };
 
-
-
-
-
-
-
-
-
-
-// window.addEventListener("load",()=>{
-// 	var lat;
-// 	var lon;
-// 	if(navigator.geolocation){
-// 		navigator.geolocation.getCurrentPosition((position)=>{
-// 			lon=position.coords.longitude;
-// 			lat=position.coords.latitude;
-
-// 			const api=`api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a6b513ab532220bf5ac92dd0dbc2fa93`
-// 			fetch(api).then((response)=>{
-// 				return response.json();
-// 			})
-// 			.then(data =>{
-// 				const{name}=data;
-// 				const{feels_like}=data.main;
-// 				const{id,main}=data.weather[0];
-// 				loc.textContent=name;
-// 				climate.textContent=main;
-// 				temp_value.textContent=Math.round(feels_like-273);
-// 			})
-// 			})
-
-// 	}
-// });
